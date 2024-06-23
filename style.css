@@ -1,0 +1,129 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+li,a,button{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color:black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+ .header button{
+    padding: 9px 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+ }
+ .contanier{
+    width: 1349px;
+    height: 1242px;
+    background-color: #EBEBEB;
+ }
+ .content-text p{
+    font-weight: 800;
+    color: #ccc2c2;
+ }
+ .content-text{
+    display: flex;
+    padding: 100px 100px;
+    width: 600px;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+ .content-img {
+    width: 180px;
+    height: 200px;
+    background-image: url("Media/NEW\ YORK.jpg");
+    background-size: cover;
+    filter: grayscale(1);
+    transition: filter,0,5s;
+}
+.content-img:hover{
+    filter: grayscale(0);
+}
+.content-img p{
+    font-weight: 800;
+    color: white;
+    padding: 20px 20px;
+}
+.content-img button{
+    border:1px solid black;
+    border-radius: 40px;
+    font-size: 10px;
+    padding: 10px 10px;
+    margin: 50px 20px;
+}
+.content-grid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+}
+.main{
+   margin: 100px 100px;
+   max-width: 600px;
+}
+.main h2{
+    font-size: 15px;
+    font-weight: 800;
+    color: #ccc2c2;
+    padding: 10px 0;
+}
+.main .main-text{
+    font-size: 35px;
+    color: blue;
+    padding: 30px 0px;
+}
+.main p{
+    font-size: 35px;
+}
+.main span{
+    padding-top: 60px;
+}
+.company{
+    width: 200px;
+    height: 200px;
+    background-color: #e9e1e1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.company p{
+    font: 3em sans-serif;
+}
+.company span{
+    width: 120px;
+    font-weight: 900;
+}
+.company button{
+    padding: 9px 25px;
+    border: 1px solid black;
+    border-radius: 50px;   
+}
+.company-grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 30px;
+    margin: 30px 0;
+}
+.ivanov{
+    display: flex;
+}
