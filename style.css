@@ -30,32 +30,62 @@ li,a,button{
     border: 1px solid black;
     border-radius: 50px;
  }
- .contanier{
-    width: 1349px;
-    height: 1242px;
-    background-color: #EBEBEB;
- }
- .content-text p{
-    font-weight: 800;
-    color: #ccc2c2;
- }
- .content-text{
+ .services h3{
+    text-align: center;
+    padding: 20px;
+}
+.services-text{
     display: flex;
-    padding: 100px 100px;
-    width: 600px;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
- }
- .content-img {
-    width: 180px;
-    height: 200px;
+    margin: 0px 350px;
+}
+.services-text p{
+    color: rgb(216, 198, 198);
+}
+.grid-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns:200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
     background-image: url("Media/NEW\ YORK.jpg");
     background-size: cover;
     filter: grayscale(1);
-    transition: filter,0,5s;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
 }
-.content-img:hover{
+.grid-item:hover{
     filter: grayscale(0);
+}
+.grid-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.grid-item button {
+    background-color: white;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.grid-item button:hover {
+    background-color: #ddd;
 }
 .content-img p{
     font-weight: 800;
@@ -126,4 +156,137 @@ li,a,button{
 }
 .ivanov{
     display: flex;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .nav-links li {
+        padding: 10px 0;
+    }
+    .header button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 5px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        display: block;
+        padding: 10px 0;
+    }
+    .header button {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .nav-links li {
+        padding: 10px 0;
+    }
+    .header button {
+        margin-top: 10px;
+    }
+    .services-text {
+        margin: 0 20px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 5px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        display: block;
+        padding: 10px 0;
+    }
+    .header button {
+        width: 100%;
+        text-align: center;
+    }
+    .services-text {
+        margin: 0 10px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .ivanov {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ivanov {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .ivanov {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .main {
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .company-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ivanov {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .main {
+        margin: 5px;
+    }
+
+    .company-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 5px;
+    }
 }
